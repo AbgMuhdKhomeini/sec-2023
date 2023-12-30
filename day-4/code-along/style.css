@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-1 {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.section-1 > .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.section-2 {
+  background-color: grey;
+  color: white;
+  height: 400px;
+}
+
+.section-2 > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+
+.section-2 > .container > div > h2 {
+  font: 40px;
+}
+
+.section-2 > .container > div > h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.section-3 {
+  background-color: white;
+  color: black;
+  height: 400px;
+}
+
+.section-3 > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+
+.section-4 {
+  background-color: grey;
+  color: white;
+  height: 400px;
+}
+
+.section-4 > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+
+.section-5 {
+  background-color: white;
+  color: black;
+  height: 400px;
+}
+
+.section-5 > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}

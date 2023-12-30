@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.page {
+  background-color: white;
+  position: relative;
+  width: 800px;
+  height: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+.section-a {
+  position: relative;
+  height: 80px;
+}
+
+.section-a1 {
+  position: absolute;
+  background-color: lightgrey;
+  width: 50px;
+  height: 20px;
+  left: 40px;
+  top: 30px;
+}
+
+.section-a2 {
+  position: absolute;
+  left: 300px;
+  top: 30px;
+}
+
+.section-a3 {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+}
+
+.section-b {
+  position: absolute;
+  height: 300px;
+  width: 800px;
+  background-color: grey;
+}
+
+.box-1 {
+  position: absolute;
+  width: 340px;
+  height: 200px;
+  background-color: grey;
+  left: 30px;
+  top: 420px;
+}
+
+.paragraph-1 {
+  position: absolute;
+  top: 650px;
+  width: 340px;
+  height: 300px;
+  left: 30px;
+}
+
+.box-2 {
+  position: absolute;
+  width: 340px;
+  height: 200px;
+  background-color: grey;
+  right: 30px;
+  bottom: 100px;
+}
+
+.paragraph-2 {
+  position: absolute;
+  top: 420px;
+  width: 340px;
+  height: 300px;
+  right: 30px;
+}
+
+p {
+  text-align: justify;
+}
+
+.img {
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+div.img > * {
+  padding-left: 40px;
+}
+
+.copyright > * {
+  position: absolute;
+  bottom: 20px;
+  left: 330px;
+  display: inline-block;
+}
+
+div.copyright img:first-child {
+  left: 300px;
+  bottom: 22px;
+}

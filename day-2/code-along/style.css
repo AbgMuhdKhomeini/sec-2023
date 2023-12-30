@@ -1,0 +1,100 @@
+.parent-a {
+  width: 800px;
+  height: 400px;
+  background-color: lightgrey;
+}
+
+.child-a1 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+}
+
+.child-a2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: inline-block;
+}
+
+.child-a3 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  display: inline-block;
+}
+
+/* relative position and absolute*/
+/* parent always relative */
+
+.parent-b {
+  width: 800px;
+  height: 400px;
+  background-color: lightgrey;
+  position: relative;
+}
+
+.child-b1 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.child-b2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.child-b3 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.parent-c {
+  width: 800px;
+  height: 400px;
+  background-color: lightgrey;
+  position: relative;
+}
+
+.child-c1 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+
+.child-c2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+}
+
+.child-c3 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+}
