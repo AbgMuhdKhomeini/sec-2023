@@ -1,3 +1,4 @@
+// mobile-menu function
 const menu_btn = document.querySelector(".mobile-menu");
 const mobile_menu = document.querySelector(".mobile-nav");
 
