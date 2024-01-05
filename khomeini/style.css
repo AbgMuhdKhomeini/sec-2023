@@ -1,0 +1,841 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #080808;
+  color: white;
+}
+
+header {
+  width: 100%;
+
+  max-width: 1200px;
+  padding: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > .logo > a {
+  text-decoration: none;
+  color: white;
+}
+
+header > nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+header > nav > * {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+header > nav > *::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #d8315b;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+header > nav > *:hover::after {
+  width: 100%;
+}
+
+/* mobile menu style*/
+header > .mobile-menu {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+header > .mobile-menu > .bar,
+.mobile-menu:after,
+.mobile-menu:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+header > .mobile-menu.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+header > .mobile-menu.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+header > .mobile-menu.is-active .bar {
+  opacity: 0;
+}
+
+header > .mobile-menu {
+  display: none;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 1000px;
+  display: block;
+  margin-top: 90px;
+  z-index: 98;
+  background: rgba(51, 50, 50, 0.2);
+  backdrop-filter: blur(6px);
+  transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav > a {
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: white;
+}
+.section-1 {
+  width: 100%;
+  max-width: 1200px;
+  height: 70vh;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.section-1 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.section-1 > div > h1 {
+  color: #d8315b;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.section-1 > div > h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.section-1 > div > h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.section-2 {
+  width: 100%;
+  max-width: 1200px;
+  height: 90vh;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-2 > .profile {
+  max-width: 1200px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-2 > .profile > h1 {
+  color: #d8315b;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.section-2 > .profile > p {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.section-2 > .profile-1 {
+  height: 500px;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.section-2 > .profile-1 > .profile-1a {
+  margin-top: 50px;
+  height: 470px;
+  background-color: #262626;
+  padding: 20px;
+  padding-bottom: 0;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.section-2 > .profile-1 > .profile-1a:hover {
+  background-color: #d8315b;
+  transform: translateY(-10px);
+}
+
+.section-2 > .profile-1 > .profile-1a > .head-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.section-2 > .profile-1 > .profile-1a > .head-icon > i {
+  font-size: 50px;
+}
+
+.section-2 > .profile-1 > .profile-1a > .profile-desc {
+  height: 300px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.section-2 > .profile-1 > .profile-1a > .profile-desc > h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+
+  text-transform: capitalize;
+}
+
+.section-2 > .profile-1 > .profile-1a > .profile-desc > ul li {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  list-style-type: square;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.section-3 {
+  width: 100%;
+  height: 50vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.section-3 > h1 {
+  color: #d8315b;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.section-3 > .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-3 > .container > .project {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #262626;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  transition: transform 0.5s;
+}
+
+.section-3 > .container > .project:hover {
+  transform: scale(1.1);
+
+  box-shadow: 0 0 60px 5px #d8315b;
+}
+
+.section-3 > .container > .project > a > button {
+  width: 100px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s;
+}
+
+.section-3 > .container > .project > a > button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.section-3 > .container > .project > a > button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  font-size: 15px;
+}
+
+.section-3 > .container > .project > a > button:hover span {
+  padding-right: 25px;
+}
+
+.section-3 > .container > .project > a > button:hover span:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.section-3 > .container > .project > .group-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section-3 > .container > .project > .group-logo > * {
+  font-size: 50px;
+}
+
+.section-3 > .container > .project > .group-logo > .logo-color-1 {
+  color: #f06529;
+}
+
+.section-3 > .container > .project > .group-logo > .logo-color-2 {
+  color: #2965f1;
+}
+
+.section-3 > .container > .project > .group-logo > .logo-color-3 {
+  color: #f0db4f;
+}
+
+.section-4 {
+  width: 100%;
+  height: 60vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.section-4 > .main-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.section-4 > h1 {
+  color: #d8315b;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+/* SET SKILL A STYLE*/
+
+.section-4 .skill-a {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #262626;
+}
+
+.skill-a .skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.skill-box .title {
+  display: block;
+  font-size: 20px;
+  font-weight: 700px;
+}
+
+.skill-box .skill-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: #ddd;
+}
+
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 80%;
+  background-color: #d8315b;
+  border-radius: 8px;
+  animation: progress 0.7s ease-in-out forwards; /* adjust progress */
+  opacity: 0;
+}
+
+.skill-per.css {
+  width: 80%; /* width for css bar*/
+}
+
+.skill-per.javascript {
+  width: 40%; /* width for javascript bar*/
+}
+
+.skill-per.commit {
+  width: 90%; /* width for commitment bar*/
+}
+
+.skill-per.nego {
+  width: 60%; /* width for negotiation bar*/
+}
+
+.skill-per.cust-service {
+  width: 80%; /* width for customer service bar*/
+}
+
+.skill-per.time-mgt {
+  width: 90%; /* width for time management bar*/
+}
+
+.skill-per.prob-solve {
+  width: 70%; /* width for problem solving bar*/
+}
+
+/* bar animation */
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per .tooltip {
+  position: absolute;
+  right: -20px;
+  top: -38px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 2px 6px;
+  color: white;
+  background-color: #d8315b;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  height: 15px;
+  width: 15px;
+  z-index: -1;
+  background-color: #d8315b;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.section-5 {
+  width: 100%;
+  max-width: 1200px;
+  height: 50vh;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-5 > h1 {
+  color: #d8315b;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.section-5 > h1 span {
+  color: white;
+  font-size: 100px;
+}
+.socmed {
+  display: inline-flex;
+}
+
+.socmed .icon {
+  margin: 0 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.socmed .icon span {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  display: block;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 2;
+}
+
+.socmed .icon span i {
+  font-size: 25px;
+  line-height: 60px;
+  color: black;
+}
+
+.socmed .icon:hover span i {
+  color: white;
+}
+
+.socmed .icon .tooltips {
+  background-color: white;
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  color: white;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.socmed .icon:hover .tooltips {
+  opacity: 1;
+  pointer-events: auto;
+  top: -70px;
+}
+
+.socmed .icon .tooltips:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.socmed .facebook:hover span,
+.socmed .facebook:hover .tooltips,
+.socmed .facebook:hover .tooltips:before {
+  background-color: #316ff6;
+}
+
+.socmed .twitter:hover span,
+.socmed .twitter:hover .tooltips,
+.socmed .twitter:hover .tooltips:before {
+  background-color: black;
+}
+
+.socmed .insta:hover span,
+.socmed .insta:hover .tooltips,
+.socmed .insta:hover .tooltips:before {
+  background-color: #e1306c;
+}
+
+.socmed .github:hover span,
+.socmed .github:hover .tooltips,
+.socmed .github:hover .tooltips:before {
+  background-color: black;
+}
+
+.socmed .email:hover span,
+.socmed .email:hover .tooltips,
+.socmed .email:hover .tooltips:before {
+  background-color: #c71610;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+  header {
+    position: fixed;
+    padding: 20px;
+  }
+
+  header > nav {
+    display: none;
+  }
+
+  .section-1 {
+    width: auto;
+
+    height: 70vh;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-1 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 400px;
+    width: auto;
+    text-align: center;
+  }
+
+  .section-2 {
+    width: auto;
+
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section-2 > .profile {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .section-2 > .profile > p {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: justify;
+  }
+
+  .section-2 > .profile-1 {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .section-3 {
+    width: auto;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .section-3 > .container {
+    width: auto;
+    height: auto;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .section-4 {
+    width: auto;
+    height: 100vh;
+
+    margin: 0 auto;
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .section-4 > .main-box {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 20px;
+    gap: 50px;
+  }
+
+  .section-5 {
+    width: auto;
+    margin-bottom: 40px;
+    height: 30vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .section-5 > h1 {
+    color: #d8315b;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .section-5 > h1 span {
+    color: white;
+    font-size: 100px;
+  }
+
+  .socmed .icon span {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    display: block;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .socmed .icon span i {
+    font-size: 25px;
+    line-height: 50px;
+    color: black;
+  }
+
+  header > .mobile-menu {
+    display: block;
+  }
+}
