@@ -26,7 +26,7 @@ main {
   position: absolute;
   width: 98px;
   height: 98px;
-  background: yellow;
+  background: #fd0000;
   border: 1px solid gray;
   border-radius: 100%;
   /* top: 0;
@@ -36,6 +36,56 @@ main {
 .grid {
   width: 100px;
   height: 100px;
-  outline: 1px solid gray;
-  background-color: white;
+  outline: 1px solid #2121de;
+
+  background-color: #09051e;
+}
+
+button {
+  all: unset;
+  background-color: #1919a6;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  transition: 0.4 ease;
+  position: relative;
+  left: 100px;
+}
+
+button:hover {
+  box-shadow: 0px 0px 10px 10px rgba(19, 51, 194, 0.377);
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  left: 150px;
+  justify-content: end;
+  position: relative;
+}
+
+.container > .btnUp {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+}
+
+.container > .btnleft {
+  position: absolute;
+  top: 130px;
+  left: 100px;
+}
+
+.container > .btndown {
+  position: absolute;
+  bottom: 190px;
+  left: 200px;
+}
+
+.container > .btnright {
+  position: absolute;
+  top: 130px;
+  left: 300px;
 }

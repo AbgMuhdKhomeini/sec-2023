@@ -14,7 +14,9 @@ let pacman = document.querySelector("#pacman");
 function buttonUpClick() {
   console.log("button up");
   let pacmanTop = parseInt(pacman.style.top, 10);
-  pacman.style.top = pacmanTop - 100 + "px";
+  if (pacmanTop > 0) {
+    pacman.style.top = pacmanTop - 100 + "px";
+  }
 }
 
 function buttonDownClick() {
@@ -23,7 +25,10 @@ function buttonDownClick() {
   // https://stackoverflow.com/questions/4860244/how-to-delete-px-from-245px
   let pacmanTop = parseInt(pacman.style.top, 10);
   // change the value of the top by 100px increment
-  pacman.style.top = pacmanTop + 100 + "px";
+
+  if (pacmanTop < 700) {
+    pacman.style.top = pacmanTop + 100 + "px";
+  }
 }
 
 // 2. addEventListener
@@ -33,12 +38,16 @@ function buttonDownClick() {
 function buttonLeftClick() {
   console.log("button left");
   let pacmanLeft = parseInt(pacman.style.left, 10);
-  pacman.style.left = pacmanLeft - 100 + "px";
+  if (pacmanLeft > 0) {
+    pacman.style.left = pacmanLeft - 100 + "px";
+  }
 }
 function buttonRightClick() {
   console.log("button right");
   let pacmanLeft = parseInt(pacman.style.left, 10);
-  pacman.style.left = pacmanLeft + 100 + "px";
+  if (pacmanLeft < 700) {
+    pacman.style.left = pacmanLeft + 100 + "px";
+  }
 }
 
 // addEventListener

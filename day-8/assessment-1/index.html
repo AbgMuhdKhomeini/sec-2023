@@ -6,6 +6,10 @@
     <title>Simple Pacman</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <main>
@@ -76,11 +80,35 @@
       <div class="grid"></div>
     </main>
     <!-- add on your own -->
-    <div>
-      <button onclick="buttonUpClick()">up</button>
-      <button onclick="buttonDownClick()">down</button>
-      <button id="btnLeft">left</button>
-      <button id="btnRight">right</button>
+    <div class="container">
+      <button class="btnUp" onclick="buttonUpClick()">
+        <i
+          class="fa fa-arrow-circle-up"
+          aria-hidden="true"
+          style="font-size: 60px"
+        ></i>
+      </button>
+      <button class="btndown" onclick="buttonDownClick()">
+        <i
+          class="fa fa-arrow-circle-down"
+          aria-hidden="true"
+          style="font-size: 60px"
+        ></i>
+      </button>
+      <button class="btnleft" id="btnLeft">
+        <i
+          class="fa fa-arrow-circle-left"
+          aria-hidden="true"
+          style="font-size: 60px"
+        ></i>
+      </button>
+      <button class="btnright" id="btnRight">
+        <i
+          class="fa fa-arrow-circle-right"
+          aria-hidden="true"
+          style="font-size: 60px"
+        ></i>
+      </button>
     </div>
   </body>
 </html>
