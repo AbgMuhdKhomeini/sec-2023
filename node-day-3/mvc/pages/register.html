@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Register</h1>
+      <!-- action = route server -->
+      <!-- http method post -->
+      <form action="/register" method="post">
+        <!-- username -->
+        <input type="text" name="username" placeholder="username" required />
+
+        <!-- email -->
+        <input type="email" name="email" placeholder="email" required />
+
+        <!-- password -->
+        <input
+          type="password"
+          name="password"
+          placeholder="password"
+          required
+        />
+
+        <!-- confirmed password -->
+        <input
+          type="password"
+          name="confirm_password"
+          placeholder="password"
+          required
+        />
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>

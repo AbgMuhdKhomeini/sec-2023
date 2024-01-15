@@ -1,0 +1,48 @@
+[
+  {
+    "name": "abang",
+    "email": "amkbas89@gmail.com",
+    "weight": "59",
+    "height": "1.61"
+  },
+  {
+    "name": "nana",
+    "email": "nana@gmail.com",
+    "weight": "70",
+    "height": "1.64"
+  },
+  {
+    "name": "wan",
+    "email": "wan@gmail.com",
+    "weight": "89",
+    "height": "1.81"
+  },
+  {
+    "name": "abang",
+    "email": "amkbas1989@gmail.com",
+    "weight": "59",
+    "height": "1.61",
+    "bmi": 23
+  },
+  {
+    "name": "nana",
+    "email": "nana@gmail.com",
+    "weight": "60",
+    "height": "1.51",
+    "bmi": 26
+  },
+  {
+    "name": "azlan",
+    "email": "azlan@yahoo.com",
+    "weight": "140",
+    "height": "1.81",
+    "bmi": 43
+  },
+  {
+    "name": "abang",
+    "email": "abg@gmail.com",
+    "weight": "59",
+    "height": "1.61",
+    "bmi": 23
+  }
+]
