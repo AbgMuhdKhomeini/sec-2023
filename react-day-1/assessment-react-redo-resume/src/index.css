@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d3e3fc;
+}
+
+span {
+  font-weight: bold;
+}
+
+.profile-pic {
+  width: 200px;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 50%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 30px;
+}
+
+.sub-intro {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.hor-line {
+  background-color: black;
+  height: 0.5px;
+  width: 60%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sub-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  max-width: 920px;
+}
+
+.sub-profile p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  margin-top: 20px;
+}
+
+.sub-edu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  left: -180px;
+}
+
+.sub-edu ol {
+  text-indent: 10px;
+  line-height: 2.5;
+  font-weight: bold;
+}
+
+.sub-edu ol ul {
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.order-list {
+  position: relative;
+  left: 30px;
+}
+
+.work-exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  margin-top: 20px;
+}
+
+.sub-work-exp {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  gap: 20px;
+}
+
+.sub-work-exp p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sub-interest {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  gap: 20px;
+}
+
+.sub-interest p {
+  text-align: justify;
+  line-height: 1.5;
+}
